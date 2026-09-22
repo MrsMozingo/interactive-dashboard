@@ -38,6 +38,30 @@
 
                 <script src="js/task-manager.js"></script>
             </div>
+            <div class="col" id="metric-converter">
+                <h2>Imperial/Metric Converter</h2>
+
+                <form>
+                    <input type="number" id="amount">
+
+                    <select id="conversion-type">
+                        <option>Inches to Centimeters</option>
+                        <option>Feet to Centimeters</option>
+                        <option>Yards to Meters</option>
+                        <option>Miles to Kilometers</option>
+                        <option>Centimeters to Inches</option>
+                        <option>Centimeters to Feet</option>
+                        <option>Meters to Yards</option>
+                        <option>Kilometers to Miles</option>
+                    </select>
+
+                    <button id="convert-btn">Convert</button>
+                </form>
+
+                <div id="result"></div>
+
+                <script src="js/metric-converter.js" defer></script>
+            </div>
         </div>
     </div>
 </body>
