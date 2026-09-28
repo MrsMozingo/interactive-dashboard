@@ -63,3 +63,9 @@ BEGIN
 
 END
 ```
+
+## Magic 8 Ball
+
+The Magic 8 Ball allows users to enter a Yes/No question and click on the 8 Ball to receive a randomly selected response. The game is built around a classic 20-response Magic 8 Ball and includes 10 positive answers, 5 non-committal answers, and 5 negative answers. Users can also add their own custom responses during the current browser session so those responses are included in the random answer selection.
+
+The code uses an array to store the possible responses and uses Math.random() and Math.floor() to randomly select a response when the 8 Ball is pressed. It also checks that a question has been entered before showing an answer, hides the answer when the game is reset, and uses a CSS animation to make the ball shake.
