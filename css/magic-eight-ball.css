@@ -1,8 +1,13 @@
 
 #magic-eight-ball {
   max-width: 410px;
-  text-align: center;
-  margin: auto;
+  text-align: left;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #circle {
@@ -10,8 +15,9 @@
   background-color: white;
   color: black;
   position: absolute;
-  margin-left: 115px;
-  margin-top: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -31,10 +37,14 @@
 }
 
 
-#magicEightBall
+#magicEightBall {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
 
 
-img:active {
+#magicEightBall img:active {
   animation: shake 0.25s;
   animation-iteration-count: infinite;
 }
@@ -54,4 +64,26 @@ img:visited {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*Match dashboard input fields styling*/
+#magic-eight-ball input {
+  border: 1px solid #bfc5c8;
+  border-radius: 4px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Center Magic Eight Ball controls */
+#magic-eight-ball form {
+    text-align: center;
+}
+
+#magic-eight-ball form p {
+    text-align: left;
+}
+
+#reset {
+    display: block;
+    margin: 10px auto 4px;
 }

@@ -27,6 +27,8 @@
             <!--Dashboard Content-->
             <div class="col" id="weekly-tasks">
                 
+            <h2>Weekly Goal Calculator</h2>
+                
                 <form>
                     <input type="text" id="name">
                     <input type="number" id="daily-goal">
@@ -35,6 +37,19 @@
                 </form>
 
                 <p id="goal-message"></p>
+
+                <div id="task-list">
+                    <h3>Weekly Task List</h3>
+                    <p>Enter a task below to manage your goals.</p>
+
+<!-- This is causing the form to clear if you hit the enter key rather than using the "add task" button when entering a task... can I type="submit" here? -->
+                   <form>
+                        <label for="task-name">Enter task:</label>
+                        <input type="text" id="task-name">
+                        <button type="button" id="add-task">Add Task</button>
+                    </form>
+
+                </div>
 
                 <script src="js/task-manager.js"></script>
             </div>
@@ -75,9 +90,10 @@
                         <div id="circle"></div>
                         <img id="ball" src="img/magic-eight-ball.png"/>
                     </div>
+
+                    <button id="reset" name="reset" type="reset">Ask another question</button>
                     <input id="new-answer" name="new-answer" placeholder="Personalized Response">
                     <button id="add-response" type="button">Add Now</button>
-                    <button id="reset" name="reset" type="reset">Ask another question</button>
 
                 </form>
 
