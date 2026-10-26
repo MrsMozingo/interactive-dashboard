@@ -32,7 +32,9 @@ function weeklyGoal(userName, dailyGoal, bonusTasks) {
     taskListContainer.appendChild(taskList);
 
     // Run when Add Task button is clicked
-    document.getElementById("add-task").addEventListener("click", function() {
+    //document.getElementById("add-task").addEventListener("click", function() {
+    document.getElementById("task-form").addEventListener("submit", function(event) {
+        event.preventDefault();
 
     //Get task from input field
     let task = document.getElementById("task-name").value.trim();
