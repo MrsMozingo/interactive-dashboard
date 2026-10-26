@@ -4,7 +4,7 @@ This project is a web-based dashboard built for WEB-115 to demonstrate interacti
 
 ## TODO: Future Enhancements
 - [X] Add a metric conversion tool.
-- [ ] Integrate a task list with array storage.
+- [X] Integrate a task list with array storage.
 - [ ] Add JavaScript logic for a live clock.
 - [X] Add a weekly task goal calculator.
 
@@ -69,3 +69,15 @@ END
 The Magic 8 Ball allows users to enter a Yes/No question and click on the 8 Ball to receive a randomly selected response. The game is built around a classic 20-response Magic 8 Ball and includes 10 positive answers, 5 non-committal answers, and 5 negative answers. Users can also add their own custom responses during the current browser session so those responses are included in the random answer selection.
 
 The code uses an array to store the possible responses and uses Math.random() and Math.floor() to randomly select a response when the 8 Ball is pressed. It also checks that a question has been entered before showing an answer, hides the answer when the game is reset, and uses a CSS animation to make the ball shake.
+
+## Task Manager
+
+The Task Manager allows users to create a task list and organize their tasks by marking them as important or assigning a High, Medium, or Low priority, resulting in a color-coded list. Users can also mark individual tasks as complete, edit them, or delete them. They also have the option to delete the entire task list.
+
+Tasks are stored in a JavaScript array of objects, with each object containing an ID, name, priority, importance status, and completion status.
+
+DOM manipulation is used to display and update tasks dynamically. Conditional styling highlights important tasks in red text, displays colored borders based on priority, and applies a strikethrough once a user marks a task as completed.
+
+Task updates are logged to the browser console using JSON.stringify().
+
+The dashboard features a clean, organized layout with consistent styling and continually evolving responsiveness to ensure a good user experience.

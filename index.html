@@ -25,6 +25,7 @@
         <div class="row">
 
             <!--Dashboard Content-->
+            <!--TO DO: Adding Mobile view display by updating class="col-12 col-md-4" led to other (minimal) layout issues - will revisit this option at later date - currently responsive just not ideal in mobile view -->
             <div class="col" id="weekly-tasks">
                 
             <h2>Weekly Goal Calculator</h2>
@@ -42,13 +43,23 @@
                     <h3>Weekly Task List</h3>
                     <p>Enter a task below to manage your goals.</p>
 
-<!-- This is causing the form to clear if you hit the enter key rather than using the "add task" button when entering a task... can I type="submit" here? -->
+
                    <form id="task-form">
                         <label for="task-name">Enter task:</label>
                         <input type="text" id="task-name">
+                        <select id="task-priority">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+
+                        <label for="task-important">Important Task:</label>
+                        <input type="checkbox" id="task-important">
+
                         <button type="submit" id="add-task">Add Task</button>
                     </form>
 
+                    <button type="button" id="delete-list">Delete List</button>
                 </div>
 
                 <script src="js/task-manager.js"></script>

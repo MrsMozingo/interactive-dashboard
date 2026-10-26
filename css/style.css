@@ -78,7 +78,7 @@ h1 {
     font-weight: bold;
 }
 
-/* Consistent dashboard button styling - can be deleted if it causes issues w/ functionality */
+/* Consistent dashboard button styling */
 #add-task,
 #goal-btn,
 #metric-converter button,
@@ -91,10 +91,72 @@ h1 {
     cursor: pointer;
 }
 
-/* Button hover effect - can be deleted if it causes issues w/ functionality */
+/* Button hover effect */
 #add-task:hover,
 #goal-btn:hover,
 #metric-converter button:hover,
 #magic-eight-ball button:hover {
     background-color: #4d5559;
+}
+
+/* Task priority dropdown */
+#task-priority {
+    padding: 8px;
+    border: 1px solid #bfc5c8;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #3f474b;
+    font-family: Arial, sans-serif;
+}
+
+/* Secondary Button - currently used for delete list but can be for others if added */
+#delete-list {
+    background-color: transparent;
+    color: #636b6f;
+    border: 1px solid #636b6f;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+/* Secondary Button on hover - currently used for delete list but can be for others if added */
+#delete-list:hover {
+    background-color: #e9ecef;
+}
+
+/* Space around tasks */
+#user-tasks li {
+    padding-left: 10px;
+}
+
+#user-tasks li span {
+    margin-right: 10px;
+}
+
+/*Task list buttons*/
+#user-tasks button {
+    background-color: transparent;
+    border: none;
+    color: #155473;
+    padding: 0 6px;
+}
+
+/*Task list buttons on hover*/
+#user-tasks button:hover {
+    text-decoration: underline;
+}
+
+/* Checkbox alignment fix */
+#weekly-tasks #task-important {
+    width: auto;
+    padding: 0;
+    margin: 0 0 0 6px;
+    vertical-align: middle;
+}
+
+#add-task {
+    display: block;
+    margin-top: 12px;
 }
